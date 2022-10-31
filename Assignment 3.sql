@@ -151,7 +151,7 @@ OR snum > 1006) AND amt >= 1500);
 /*
 
 SELECT * FROM ORDERS
-WHERE amt IS NOT NULL;
+WHERE amt IS NOT NULL and amt > 0;
 
 */
 
