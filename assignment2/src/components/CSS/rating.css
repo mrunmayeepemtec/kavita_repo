@@ -1,0 +1,12 @@
+.contact-box{
+    width: 600px;
+    height: 400px;
+    background-color: white;
+    box-shadow: 0 0 20px 0 rgb(216, 205, 205);
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: center;
+}
+
