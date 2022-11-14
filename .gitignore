@@ -15,3 +15,12 @@
 /Assignment_4(.netFramework)/bin/Debug
 /Assignment_4(.netFramework)/obj
 /Assignment_4(.netFramework)/Properties
+
+/Assignment_5(web .netFramework)/.vs
+/Assignment_5(web .netFramework)/CalcWebApplication1Framework/App_Start
+/Assignment_5(web .netFramework)/CalcWebApplication1Framework/bin
+/Assignment_5(web .netFramework)/CalcWebApplication1Framework/Content
+/Assignment_5(web .netFramework)/CalcWebApplication1Framework/fonts
+/Assignment_5(web .netFramework)/CalcWebApplication1Framework/obj/Debug
+/Assignment_5(web .netFramework)/CalcWebApplication1Framework/Properties
+/Assignment_5(web .netFramework)/packages
