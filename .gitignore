@@ -24,3 +24,9 @@
 /Assignment_5(web .netFramework)/CalcWebApplication1Framework/obj/Debug
 /Assignment_5(web .netFramework)/CalcWebApplication1Framework/Properties
 /Assignment_5(web .netFramework)/packages
+/CalcConsoleApp1Core/bin/Debug/netcoreapp3.1
+/CalcConsoleApp1Core/obj/Debug/netcoreapp3.1
+/CalcConsoleApp1Framework/bin/Debug/net6.0
+/CalcConsoleApp1Framework/obj
+/CalcConsoleApp1Core/obj
+/Assignment_5(web .netFramework)/CalcWebApplication1Framework/obj/Release
