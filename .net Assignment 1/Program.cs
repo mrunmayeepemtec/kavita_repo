@@ -173,7 +173,15 @@ namespace Assignment_1
 
 //------------------------------------------------------------------------------------------
 
-// Q. 4) Write a C# program which demoes the concept of OOPS – 
+/* Q. 4) Write a C# program which demoes the concept of OOPS – 
+
+a.Class
+b.Constructor
+c.Method Overloading
+d.Method Overriding
+e.Inheritance
+
+ */
 
 /*
  
@@ -189,6 +197,8 @@ namespace Assignment_1
         decimal Balance { get; }
 
     }
+
+    // Inheritance
     public class SavingAccount : Account
     {
         private decimal balance;
@@ -263,6 +273,8 @@ namespace Assignment_1
         }
     }
 
+    // class
+
     public class Customer
     {
         private string firstName = "";
@@ -270,6 +282,8 @@ namespace Assignment_1
         private string email = "";
         private string address = "";
         private string phoneNumber = "";
+
+        // Constructor
 
         public Customer()
         {
@@ -280,6 +294,9 @@ namespace Assignment_1
             phoneNumber = "12345678901";
 
         }
+
+        // Overriding
+
         public override string ToString()
         {
             return "FirstName: " + firstName + "\n" +
@@ -297,6 +314,14 @@ namespace Assignment_1
         {
             Console.WriteLine("Simple Interest is: " + (amount * rate * time) / 100);
         }
+        
+        public static void calculateInterest(int amount, int rate)
+        {
+            int time = 5;
+            Console.WriteLine("Simple Interest is: " + (amount * rate * time) / 100)
+        }
+        
+
         static void Main(String[] args)
         {
             Account savingAccount = new SavingAccount();
@@ -315,7 +340,10 @@ namespace Assignment_1
             Customer customer = new Customer();
             Console.WriteLine(customer);
 
+
+            // Overlading
             calculateInterest(1000, 4, 4);
+            calculateInterest(3000, 2);
 
 
             Console.ReadLine();
