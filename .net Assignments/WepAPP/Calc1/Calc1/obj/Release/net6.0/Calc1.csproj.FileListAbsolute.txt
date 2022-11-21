@@ -1,0 +1,12 @@
+C:\Users\kavita.dake\Desktop\WebApp\Calc1\Calc1\bin\Release\net6.0\Calc1.deps.json
+C:\Users\kavita.dake\Desktop\WebApp\Calc1\Calc1\bin\Release\net6.0\Calc1.dll
+C:\Users\kavita.dake\Desktop\WebApp\Calc1\Calc1\bin\Release\net6.0\Calc1.pdb
+C:\Users\kavita.dake\Desktop\WebApp\Calc1\Calc1\obj\Release\net6.0\Calc1.csproj.AssemblyReference.cache
+C:\Users\kavita.dake\Desktop\WebApp\Calc1\Calc1\obj\Release\net6.0\Calc1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kavita.dake\Desktop\WebApp\Calc1\Calc1\obj\Release\net6.0\Calc1.AssemblyInfoInputs.cache
+C:\Users\kavita.dake\Desktop\WebApp\Calc1\Calc1\obj\Release\net6.0\Calc1.AssemblyInfo.cs
+C:\Users\kavita.dake\Desktop\WebApp\Calc1\Calc1\obj\Release\net6.0\Calc1.csproj.CoreCompileInputs.cache
+C:\Users\kavita.dake\Desktop\WebApp\Calc1\Calc1\obj\Release\net6.0\Calc1.dll
+C:\Users\kavita.dake\Desktop\WebApp\Calc1\Calc1\obj\Release\net6.0\refint\Calc1.dll
+C:\Users\kavita.dake\Desktop\WebApp\Calc1\Calc1\obj\Release\net6.0\Calc1.pdb
+C:\Users\kavita.dake\Desktop\WebApp\Calc1\Calc1\obj\Release\net6.0\ref\Calc1.dll

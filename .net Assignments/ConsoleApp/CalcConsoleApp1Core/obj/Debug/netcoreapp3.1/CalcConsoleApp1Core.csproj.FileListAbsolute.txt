@@ -1,0 +1,14 @@
+C:\Users\kavita.dake\Desktop\WebApp\CalculatorWebAppFramwork\CalcConsoleApp1Framework\CalcConsoleApp1Core\bin\Debug\netcoreapp3.1\CalcConsoleApp1Core.exe
+C:\Users\kavita.dake\Desktop\WebApp\CalculatorWebAppFramwork\CalcConsoleApp1Framework\CalcConsoleApp1Core\bin\Debug\netcoreapp3.1\CalcConsoleApp1Core.deps.json
+C:\Users\kavita.dake\Desktop\WebApp\CalculatorWebAppFramwork\CalcConsoleApp1Framework\CalcConsoleApp1Core\bin\Debug\netcoreapp3.1\CalcConsoleApp1Core.runtimeconfig.json
+C:\Users\kavita.dake\Desktop\WebApp\CalculatorWebAppFramwork\CalcConsoleApp1Framework\CalcConsoleApp1Core\bin\Debug\netcoreapp3.1\CalcConsoleApp1Core.runtimeconfig.dev.json
+C:\Users\kavita.dake\Desktop\WebApp\CalculatorWebAppFramwork\CalcConsoleApp1Framework\CalcConsoleApp1Core\bin\Debug\netcoreapp3.1\CalcConsoleApp1Core.dll
+C:\Users\kavita.dake\Desktop\WebApp\CalculatorWebAppFramwork\CalcConsoleApp1Framework\CalcConsoleApp1Core\bin\Debug\netcoreapp3.1\CalcConsoleApp1Core.pdb
+C:\Users\kavita.dake\Desktop\WebApp\CalculatorWebAppFramwork\CalcConsoleApp1Framework\CalcConsoleApp1Core\obj\Debug\netcoreapp3.1\CalcConsoleApp1Core.csproj.AssemblyReference.cache
+C:\Users\kavita.dake\Desktop\WebApp\CalculatorWebAppFramwork\CalcConsoleApp1Framework\CalcConsoleApp1Core\obj\Debug\netcoreapp3.1\CalcConsoleApp1Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kavita.dake\Desktop\WebApp\CalculatorWebAppFramwork\CalcConsoleApp1Framework\CalcConsoleApp1Core\obj\Debug\netcoreapp3.1\CalcConsoleApp1Core.AssemblyInfoInputs.cache
+C:\Users\kavita.dake\Desktop\WebApp\CalculatorWebAppFramwork\CalcConsoleApp1Framework\CalcConsoleApp1Core\obj\Debug\netcoreapp3.1\CalcConsoleApp1Core.AssemblyInfo.cs
+C:\Users\kavita.dake\Desktop\WebApp\CalculatorWebAppFramwork\CalcConsoleApp1Framework\CalcConsoleApp1Core\obj\Debug\netcoreapp3.1\CalcConsoleApp1Core.csproj.CoreCompileInputs.cache
+C:\Users\kavita.dake\Desktop\WebApp\CalculatorWebAppFramwork\CalcConsoleApp1Framework\CalcConsoleApp1Core\obj\Debug\netcoreapp3.1\CalcConsoleApp1Core.dll
+C:\Users\kavita.dake\Desktop\WebApp\CalculatorWebAppFramwork\CalcConsoleApp1Framework\CalcConsoleApp1Core\obj\Debug\netcoreapp3.1\CalcConsoleApp1Core.pdb
+C:\Users\kavita.dake\Desktop\WebApp\CalculatorWebAppFramwork\CalcConsoleApp1Framework\CalcConsoleApp1Core\obj\Debug\netcoreapp3.1\CalcConsoleApp1Core.genruntimeconfig.cache

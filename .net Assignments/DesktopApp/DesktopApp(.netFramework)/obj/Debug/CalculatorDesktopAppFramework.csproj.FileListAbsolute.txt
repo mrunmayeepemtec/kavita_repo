@@ -1,0 +1,11 @@
+C:\Users\kavita.dake\Desktop\Desktop App\CalculatorApp1\CalculatorDesktopAppFramework\bin\Debug\CalculatorDesktopAppFramework.exe.config
+C:\Users\kavita.dake\Desktop\Desktop App\CalculatorApp1\CalculatorDesktopAppFramework\bin\Debug\CalculatorDesktopAppFramework.exe
+C:\Users\kavita.dake\Desktop\Desktop App\CalculatorApp1\CalculatorDesktopAppFramework\bin\Debug\CalculatorDesktopAppFramework.pdb
+C:\Users\kavita.dake\Desktop\Desktop App\CalculatorApp1\CalculatorDesktopAppFramework\obj\Debug\CalculatorDesktopAppFramework.csproj.AssemblyReference.cache
+C:\Users\kavita.dake\Desktop\Desktop App\CalculatorApp1\CalculatorDesktopAppFramework\obj\Debug\CalculatorDesktopAppFramework.csproj.SuggestedBindingRedirects.cache
+C:\Users\kavita.dake\Desktop\Desktop App\CalculatorApp1\CalculatorDesktopAppFramework\obj\Debug\CalculatorDesktopAppFramework.Form1.resources
+C:\Users\kavita.dake\Desktop\Desktop App\CalculatorApp1\CalculatorDesktopAppFramework\obj\Debug\CalculatorDesktopAppFramework.Properties.Resources.resources
+C:\Users\kavita.dake\Desktop\Desktop App\CalculatorApp1\CalculatorDesktopAppFramework\obj\Debug\CalculatorDesktopAppFramework.csproj.GenerateResource.cache
+C:\Users\kavita.dake\Desktop\Desktop App\CalculatorApp1\CalculatorDesktopAppFramework\obj\Debug\CalculatorDesktopAppFramework.csproj.CoreCompileInputs.cache
+C:\Users\kavita.dake\Desktop\Desktop App\CalculatorApp1\CalculatorDesktopAppFramework\obj\Debug\CalculatorDesktopAppFramework.exe
+C:\Users\kavita.dake\Desktop\Desktop App\CalculatorApp1\CalculatorDesktopAppFramework\obj\Debug\CalculatorDesktopAppFramework.pdb

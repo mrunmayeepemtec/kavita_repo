@@ -1,0 +1,16 @@
+C:\Users\kavita.dake\Desktop\Desktop App\CalculatorApp1\CalculatorApp1\obj\Debug\netcoreapp3.1\CalculatorApp1.csproj.AssemblyReference.cache
+C:\Users\kavita.dake\Desktop\Desktop App\CalculatorApp1\CalculatorApp1\obj\Debug\netcoreapp3.1\CalculatorApp1.Form1.resources
+C:\Users\kavita.dake\Desktop\Desktop App\CalculatorApp1\CalculatorApp1\obj\Debug\netcoreapp3.1\CalculatorApp1.csproj.GenerateResource.cache
+C:\Users\kavita.dake\Desktop\Desktop App\CalculatorApp1\CalculatorApp1\obj\Debug\netcoreapp3.1\CalculatorApp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kavita.dake\Desktop\Desktop App\CalculatorApp1\CalculatorApp1\obj\Debug\netcoreapp3.1\CalculatorApp1.AssemblyInfoInputs.cache
+C:\Users\kavita.dake\Desktop\Desktop App\CalculatorApp1\CalculatorApp1\obj\Debug\netcoreapp3.1\CalculatorApp1.AssemblyInfo.cs
+C:\Users\kavita.dake\Desktop\Desktop App\CalculatorApp1\CalculatorApp1\obj\Debug\netcoreapp3.1\CalculatorApp1.csproj.CoreCompileInputs.cache
+C:\Users\kavita.dake\Desktop\Desktop App\CalculatorApp1\CalculatorApp1\bin\Debug\netcoreapp3.1\CalculatorApp1.exe
+C:\Users\kavita.dake\Desktop\Desktop App\CalculatorApp1\CalculatorApp1\bin\Debug\netcoreapp3.1\CalculatorApp1.deps.json
+C:\Users\kavita.dake\Desktop\Desktop App\CalculatorApp1\CalculatorApp1\bin\Debug\netcoreapp3.1\CalculatorApp1.runtimeconfig.json
+C:\Users\kavita.dake\Desktop\Desktop App\CalculatorApp1\CalculatorApp1\bin\Debug\netcoreapp3.1\CalculatorApp1.runtimeconfig.dev.json
+C:\Users\kavita.dake\Desktop\Desktop App\CalculatorApp1\CalculatorApp1\bin\Debug\netcoreapp3.1\CalculatorApp1.dll
+C:\Users\kavita.dake\Desktop\Desktop App\CalculatorApp1\CalculatorApp1\bin\Debug\netcoreapp3.1\CalculatorApp1.pdb
+C:\Users\kavita.dake\Desktop\Desktop App\CalculatorApp1\CalculatorApp1\obj\Debug\netcoreapp3.1\CalculatorApp1.dll
+C:\Users\kavita.dake\Desktop\Desktop App\CalculatorApp1\CalculatorApp1\obj\Debug\netcoreapp3.1\CalculatorApp1.pdb
+C:\Users\kavita.dake\Desktop\Desktop App\CalculatorApp1\CalculatorApp1\obj\Debug\netcoreapp3.1\CalculatorApp1.genruntimeconfig.cache
