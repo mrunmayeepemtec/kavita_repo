@@ -1,0 +1,15 @@
+C:\Users\kavita.dake\Desktop\WebApp\CalculatorWebAppFramwork\CalcConsoleApp1Framework\CalcConsoleApp1Framework\bin\Debug\net6.0\CalcConsoleApp1Framework.exe
+C:\Users\kavita.dake\Desktop\WebApp\CalculatorWebAppFramwork\CalcConsoleApp1Framework\CalcConsoleApp1Framework\bin\Debug\net6.0\CalcConsoleApp1Framework.deps.json
+C:\Users\kavita.dake\Desktop\WebApp\CalculatorWebAppFramwork\CalcConsoleApp1Framework\CalcConsoleApp1Framework\bin\Debug\net6.0\CalcConsoleApp1Framework.runtimeconfig.json
+C:\Users\kavita.dake\Desktop\WebApp\CalculatorWebAppFramwork\CalcConsoleApp1Framework\CalcConsoleApp1Framework\bin\Debug\net6.0\CalcConsoleApp1Framework.dll
+C:\Users\kavita.dake\Desktop\WebApp\CalculatorWebAppFramwork\CalcConsoleApp1Framework\CalcConsoleApp1Framework\bin\Debug\net6.0\CalcConsoleApp1Framework.pdb
+C:\Users\kavita.dake\Desktop\WebApp\CalculatorWebAppFramwork\CalcConsoleApp1Framework\CalcConsoleApp1Framework\obj\Debug\net6.0\CalcConsoleApp1Framework.csproj.AssemblyReference.cache
+C:\Users\kavita.dake\Desktop\WebApp\CalculatorWebAppFramwork\CalcConsoleApp1Framework\CalcConsoleApp1Framework\obj\Debug\net6.0\CalcConsoleApp1Framework.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kavita.dake\Desktop\WebApp\CalculatorWebAppFramwork\CalcConsoleApp1Framework\CalcConsoleApp1Framework\obj\Debug\net6.0\CalcConsoleApp1Framework.AssemblyInfoInputs.cache
+C:\Users\kavita.dake\Desktop\WebApp\CalculatorWebAppFramwork\CalcConsoleApp1Framework\CalcConsoleApp1Framework\obj\Debug\net6.0\CalcConsoleApp1Framework.AssemblyInfo.cs
+C:\Users\kavita.dake\Desktop\WebApp\CalculatorWebAppFramwork\CalcConsoleApp1Framework\CalcConsoleApp1Framework\obj\Debug\net6.0\CalcConsoleApp1Framework.csproj.CoreCompileInputs.cache
+C:\Users\kavita.dake\Desktop\WebApp\CalculatorWebAppFramwork\CalcConsoleApp1Framework\CalcConsoleApp1Framework\obj\Debug\net6.0\CalcConsoleApp1Framework.dll
+C:\Users\kavita.dake\Desktop\WebApp\CalculatorWebAppFramwork\CalcConsoleApp1Framework\CalcConsoleApp1Framework\obj\Debug\net6.0\refint\CalcConsoleApp1Framework.dll
+C:\Users\kavita.dake\Desktop\WebApp\CalculatorWebAppFramwork\CalcConsoleApp1Framework\CalcConsoleApp1Framework\obj\Debug\net6.0\CalcConsoleApp1Framework.pdb
+C:\Users\kavita.dake\Desktop\WebApp\CalculatorWebAppFramwork\CalcConsoleApp1Framework\CalcConsoleApp1Framework\obj\Debug\net6.0\CalcConsoleApp1Framework.genruntimeconfig.cache
+C:\Users\kavita.dake\Desktop\WebApp\CalculatorWebAppFramwork\CalcConsoleApp1Framework\CalcConsoleApp1Framework\obj\Debug\net6.0\ref\CalcConsoleApp1Framework.dll

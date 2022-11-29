@@ -1,0 +1,24 @@
+C:\Users\kavita.dake\Desktop\WebApp\Minimal API\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\kavita.dake\Desktop\WebApp\Minimal API\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\kavita.dake\Desktop\WebApp\Minimal API\bin\Debug\netcoreapp3.1\Minimal API.exe
+C:\Users\kavita.dake\Desktop\WebApp\Minimal API\bin\Debug\netcoreapp3.1\Minimal API.deps.json
+C:\Users\kavita.dake\Desktop\WebApp\Minimal API\bin\Debug\netcoreapp3.1\Minimal API.runtimeconfig.json
+C:\Users\kavita.dake\Desktop\WebApp\Minimal API\bin\Debug\netcoreapp3.1\Minimal API.runtimeconfig.dev.json
+C:\Users\kavita.dake\Desktop\WebApp\Minimal API\bin\Debug\netcoreapp3.1\Minimal API.dll
+C:\Users\kavita.dake\Desktop\WebApp\Minimal API\bin\Debug\netcoreapp3.1\Minimal API.pdb
+C:\Users\kavita.dake\Desktop\WebApp\Minimal API\obj\Debug\netcoreapp3.1\Minimal API.csproj.AssemblyReference.cache
+C:\Users\kavita.dake\Desktop\WebApp\Minimal API\obj\Debug\netcoreapp3.1\Minimal API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kavita.dake\Desktop\WebApp\Minimal API\obj\Debug\netcoreapp3.1\Minimal API.AssemblyInfoInputs.cache
+C:\Users\kavita.dake\Desktop\WebApp\Minimal API\obj\Debug\netcoreapp3.1\Minimal API.AssemblyInfo.cs
+C:\Users\kavita.dake\Desktop\WebApp\Minimal API\obj\Debug\netcoreapp3.1\Minimal API.csproj.CoreCompileInputs.cache
+C:\Users\kavita.dake\Desktop\WebApp\Minimal API\obj\Debug\netcoreapp3.1\Minimal API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\kavita.dake\Desktop\WebApp\Minimal API\obj\Debug\netcoreapp3.1\staticwebassets\Minimal API.StaticWebAssets.Manifest.cache
+C:\Users\kavita.dake\Desktop\WebApp\Minimal API\obj\Debug\netcoreapp3.1\staticwebassets\Minimal API.StaticWebAssets.Pack.cache
+C:\Users\kavita.dake\Desktop\WebApp\Minimal API\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.Minimal API.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\kavita.dake\Desktop\WebApp\Minimal API\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.build.Minimal API.props
+C:\Users\kavita.dake\Desktop\WebApp\Minimal API\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildMultiTargeting.Minimal API.props
+C:\Users\kavita.dake\Desktop\WebApp\Minimal API\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildTransitive.Minimal API.props
+C:\Users\kavita.dake\Desktop\WebApp\Minimal API\obj\Debug\netcoreapp3.1\Minimal API.RazorTargetAssemblyInfo.cache
+C:\Users\kavita.dake\Desktop\WebApp\Minimal API\obj\Debug\netcoreapp3.1\Minimal API.dll
+C:\Users\kavita.dake\Desktop\WebApp\Minimal API\obj\Debug\netcoreapp3.1\Minimal API.pdb
+C:\Users\kavita.dake\Desktop\WebApp\Minimal API\obj\Debug\netcoreapp3.1\Minimal API.genruntimeconfig.cache

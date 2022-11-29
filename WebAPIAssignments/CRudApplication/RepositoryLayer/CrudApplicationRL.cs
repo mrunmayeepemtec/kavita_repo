@@ -1,0 +1,539 @@
+﻿using CRudApplication.Common_Utility;
+using CRudApplication.CommonLayer.Model;
+//using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
+//using Microsoft.IdentityModel.Tokens;
+//using MySqlConnector;
+using System;
+using System.Collections.Generic;
+//using System.IdentityModel.Tokens.Jwt;
+using Microsoft.AspNetCore.Http;
+using System.Security.Claims;
+using System.Text;
+using System.Threading.Tasks;
+using CRudApplication.RepositoryLayer;
+using System.Data.SqlClient;
+
+namespace CRudApplication.RepositoryLayer
+{
+    public class CrudApplicationRL : ICrudApplicationRL
+    {
+        public readonly IConfiguration _configuration;
+        public readonly ILogger<CrudApplicationRL> _logger;
+        public readonly SqlConnection _mySqlConnection;
+
+        public CrudApplicationRL(IConfiguration configuration, ILogger<CrudApplicationRL> logger)
+        {
+            _configuration = configuration;
+            _logger = logger;
+            _mySqlConnection = new SqlConnection(_configuration["ConnectionStrings:MySqlDBConnection"]);
+        }
+
+
+        public async Task<RegisterUserResponse> RegisterUser(RegisterUserRequest request)
+        {
+            RegisterUserResponse response = new RegisterUserResponse();
+            response.IsSuccess = true;
+            response.Message = "Successful";
+            try
+            {
+                if (_mySqlConnection.State != System.Data.ConnectionState.Open)
+                {
+                    await _mySqlConnection.OpenAsync();
+                }
+
+                using (SqlCommand sqlCommand = new SqlCommand(SqlQueries.RegisterUser, _mySqlConnection))
+                {
+                    if (request.Password != request.ConfirmPassword)
+                    {
+                        response.IsSuccess = false;
+                        response.Message = "Password Not Match";
+                        return response;
+                    }
+
+                    sqlCommand.CommandType = System.Data.CommandType.Text;
+                    sqlCommand.CommandTimeout = 180;
+                    sqlCommand.Parameters.AddWithValue("@UserName", request.UserName);
+                    sqlCommand.Parameters.AddWithValue("@PassWord", request.Password);
+                    sqlCommand.Parameters.AddWithValue("@Role", request.Role);
+                    if (await sqlCommand.ExecuteNonQueryAsync() <= 0)
+                    {
+                        response.IsSuccess = false;
+                        response.Message = "Something Went Wrong in Query";
+                        return response;
+                    }
+                }
+
+            }
+            catch (Exception ex)
+            {
+                response.IsSuccess = false;
+                response.Message = ex.Message;
+            }
+            finally
+            {
+                await _mySqlConnection.CloseAsync();
+                await _mySqlConnection.DisposeAsync();
+            }
+
+            return response;
+        }
+
+        public async Task<UserLoginResponse> UserLogin(UserLoginRequest request)
+        {
+            UserLoginResponse response = new UserLoginResponse();
+            response.IsSuccess = true;
+            response.Message = "Successful";
+
+            try
+            {
+
+                if (_mySqlConnection.State != System.Data.ConnectionState.Open)
+                {
+                    await _mySqlConnection.OpenAsync();
+                }
+
+                using (SqlCommand sqlCommand = new SqlCommand(SqlQueries.UserLogin, _mySqlConnection))
+                {
+                    sqlCommand.CommandType = System.Data.CommandType.Text;
+                    sqlCommand.CommandTimeout = 180;
+                    sqlCommand.Parameters.AddWithValue("@UserName", request.UserName);
+                    sqlCommand.Parameters.AddWithValue("@PassWord", request.Password);
+                    using (SqlDataReader dataReader = await sqlCommand.ExecuteReaderAsync())
+                    {
+                        if (dataReader.HasRows)
+                        {
+                            response.data = new UserInformation();
+                            await dataReader.ReadAsync();
+                            response.Message = "User Login Successful";
+                            response.data.Email = dataReader["UserName"] != DBNull.Value ? dataReader["UserName"].ToString() : string.Empty;//UserID, Role
+                            response.data.Role = dataReader["Role"] != DBNull.Value ? dataReader["Role"].ToString() : string.Empty;
+                            response.data.UserId = dataReader["UserId"] != DBNull.Value ? Convert.ToString(dataReader["UserId"]) : string.Empty;
+                            //response.Token = GenerateJWT(response.data.UserId, response.data.Email, response.data.Role);
+                        }
+                        else
+                        {
+                            response.IsSuccess = false;
+                            response.Message = "User Login Failed";
+                        }
+                    }
+                }
+
+            }
+            catch (Exception ex)
+            {
+                response.IsSuccess = false;
+                response.Message = ex.Message;
+            }
+            finally
+            {
+                await _mySqlConnection.CloseAsync();
+                await _mySqlConnection.DisposeAsync();
+            }
+
+            return response;
+        }
+
+        public async Task<AddInformationResponse> AddInformation(AddInformationRequest request)
+        {
+            _logger.LogInformation("AddInformation Repository Layer Calling");
+            AddInformationResponse response = new AddInformationResponse();
+            response.IsSuccess = true;
+            response.Message = "Successful";
+            try
+            {
+                if (_mySqlConnection.State != System.Data.ConnectionState.Open)
+                { await _mySqlConnection.OpenAsync(); }
+
+                using (SqlCommand sqlCommand = new SqlCommand(SqlQueries.AddInformation, _mySqlConnection))
+                {
+                    sqlCommand.CommandType = System.Data.CommandType.Text;
+                    sqlCommand.CommandTimeout = 180;
+                    sqlCommand.Parameters.AddWithValue("@UserName", request.UserName);
+                    sqlCommand.Parameters.AddWithValue("@EmailID", request.EmailID);
+                    sqlCommand.Parameters.AddWithValue("@MobileNumber", request.MobileNumber);
+                    sqlCommand.Parameters.AddWithValue("@Gender", request.Gender);
+                    int Status = await sqlCommand.ExecuteNonQueryAsync();
+                    if (Status <= 0)
+                    {
+                        response.IsSuccess = false;
+                        response.Message = "AddInformation Query Not Executed";
+                        _logger.LogError("AddInformation Query Not Executed");
+                    }
+                }
+
+            }
+            catch (Exception ex)
+            {
+                response.IsSuccess = false;
+                response.Message = ex.Message;
+                _logger.LogError($"AddInformation Repository Layer Error : {ex.Message}");
+            }
+            finally
+            {
+                await _mySqlConnection.CloseAsync();
+                await _mySqlConnection.DisposeAsync();
+
+            }
+            return response;
+        }
+
+        public async Task<DeleteAllInformationResponse> DeleteAllInActiveInformation()
+        {
+            _logger.LogInformation("DeleteAllInActiveInformation Repository Layer Calling");
+            DeleteAllInformationResponse response = new DeleteAllInformationResponse();
+            response.IsSuccess = true;
+            response.Message = "Successful";
+            try
+            {
+                if (_mySqlConnection.State != System.Data.ConnectionState.Open)
+                { await _mySqlConnection.OpenAsync(); }
+
+                using (SqlCommand sqlCommand = new SqlCommand(SqlQueries.DeleteAllInformation, _mySqlConnection))
+                {
+                    sqlCommand.CommandType = System.Data.CommandType.Text;
+                    sqlCommand.CommandTimeout = 180;
+                    int Status = await sqlCommand.ExecuteNonQueryAsync();
+                    if (Status <= 0)
+                    {
+                        response.IsSuccess = false;
+                        response.Message = "DeleteAllInActiveInformation Query Not Executed";
+                        _logger.LogError("DeleteAllInActiveInformation Query Not Executed");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                response.IsSuccess = false;
+                response.Message = ex.Message;
+                _logger.LogError($"DeleteAllInActiveInformation Repository Layer Error : {ex.Message}");
+            }
+            finally
+            {
+                await _mySqlConnection.CloseAsync();
+                await _mySqlConnection.DisposeAsync();
+            }
+            return response;
+        }
+
+        public async Task<DeleteInformationByIDResponse> DeleteInformationByID(DeleteInformationByIDRequest request)
+        {
+            _logger.LogInformation($"DeleteInformationByID Repository Layer Calling");
+            DeleteInformationByIDResponse response = new DeleteInformationByIDResponse();
+            response.IsSuccess = true;
+            response.Message = "Successful";
+            try
+            {
+                if (_mySqlConnection.State != System.Data.ConnectionState.Open)
+                { await _mySqlConnection.OpenAsync(); }
+
+                using (SqlCommand sqlCommand = new SqlCommand(SqlQueries.DeleteInformationByID, _mySqlConnection))
+                {
+                    sqlCommand.CommandType = System.Data.CommandType.Text;
+                    sqlCommand.CommandTimeout = 180;
+                    sqlCommand.Parameters.AddWithValue("@Id", request.Id);
+                    int Status = await sqlCommand.ExecuteNonQueryAsync();
+                    if (Status <= 0)
+                    {
+                        response.IsSuccess = false;
+                        response.Message = "DeleteInformationByID Query Not Executed";
+                        _logger.LogError("DeleteInformationByID Query Not Executed");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                response.IsSuccess = false;
+                response.Message = ex.Message;
+                _logger.LogError($"DeleteInformationByID Repository Layer Error : {ex.Message}");
+            }
+            finally
+            {
+                await _mySqlConnection.CloseAsync();
+                await _mySqlConnection.DisposeAsync();
+            }
+            return response;
+        }
+
+        public async Task<GetAllDeleteInformationResponse> GetAllDeleteInformation()
+        {
+            _logger.LogInformation("ReadAllInformation Repository Layer Calling");
+            GetAllDeleteInformationResponse response = new GetAllDeleteInformationResponse();
+            response.IsSuccess = true;
+            response.Message = "Successful";
+            try
+            {
+
+                if (_mySqlConnection.State != System.Data.ConnectionState.Open)
+                { await _mySqlConnection.OpenAsync(); }
+
+                using (SqlCommand sqlCommand = new SqlCommand(SqlQueries.GetAllDeleteInformation, _mySqlConnection))
+                {
+                    sqlCommand.CommandType = System.Data.CommandType.Text;
+                    sqlCommand.CommandTimeout = 180;
+                    using (SqlDataReader dataReader = await sqlCommand.ExecuteReaderAsync())
+                    {
+                        if (dataReader.HasRows)
+                        {
+                            response.deletedInformation = new List<DeletedInformation>();
+
+                            while (await dataReader.ReadAsync())
+                            {
+                                DeletedInformation getData = new DeletedInformation();
+                                getData.UserId = dataReader["UserId"] != DBNull.Value ? Convert.ToInt32(dataReader["UserId"]) : 0;
+                                getData.UserName = dataReader["UserName"] != DBNull.Value ? Convert.ToString(dataReader["UserName"]) : null;
+                                getData.EmailId = dataReader["EmailId"] != DBNull.Value ? Convert.ToString(dataReader["EmailId"]) : null;
+                                getData.Gender = dataReader["Gender"] != DBNull.Value ? Convert.ToString(dataReader["Gender"]) : null;
+                                getData.MobileNumber = dataReader["MobileNumber"] != DBNull.Value ? Convert.ToString(dataReader["MobileNumber"]) : null;
+                                getData.Salary = dataReader["Salary"] != DBNull.Value ? Convert.ToInt32(dataReader["Salary"]) : 0;
+                                getData.IsActive = dataReader["IsActive"] != DBNull.Value ? Convert.ToBoolean(dataReader["IsActive"]) : false;
+                                response.deletedInformation.Add(getData);
+
+                            }
+                        }
+                        else
+                        {
+                            response.Message = "No Record At DataBase";
+                            _logger.LogWarning("No Record At DataBase");
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                response.IsSuccess = false;
+                response.Message = ex.Message;
+                _logger.LogError($"ReadAllInformation Repository Layer Error : {ex.Message}");
+            }
+            finally
+            {
+                await _mySqlConnection.CloseAsync();
+                await _mySqlConnection.DisposeAsync();
+            }
+            return response;
+        }
+
+        public async Task<ReadInformationResponse> ReadAllInformation()
+        {
+            _logger.LogInformation("ReadAllInformation Repository Layer Calling");
+            ReadInformationResponse response = new ReadInformationResponse();
+            response.IsSuccess = true;
+            response.Message = "Successful";
+            try
+            {
+
+                if (_mySqlConnection.State != System.Data.ConnectionState.Open)
+                { await _mySqlConnection.OpenAsync(); }
+
+                using (SqlCommand sqlCommand = new SqlCommand(SqlQueries.ReadInformation, _mySqlConnection))
+                {
+                    sqlCommand.CommandType = System.Data.CommandType.Text;
+                    sqlCommand.CommandTimeout = 180;
+                    using (SqlDataReader dataReader = await sqlCommand.ExecuteReaderAsync())
+                    {
+                        if (dataReader.HasRows)
+                        {
+                            response.readInformation = new List<ReadInformation>();
+
+                            while (await dataReader.ReadAsync())
+                            {
+                                ReadInformation getData = new ReadInformation();
+                                getData.UserId = dataReader["UserId"] != DBNull.Value ? Convert.ToInt32(dataReader["UserId"]) : 0;
+                                getData.UserName = dataReader["UserName"] != DBNull.Value ? Convert.ToString(dataReader["UserName"]) : null;
+                                getData.EmailId = dataReader["EmailId"] != DBNull.Value ? Convert.ToString(dataReader["EmailId"]) : null;
+                                getData.Gender = dataReader["Gender"] != DBNull.Value ? Convert.ToString(dataReader["Gender"]) : null;
+                                getData.MobileNumber = dataReader["MobileNumber"] != DBNull.Value ? Convert.ToString(dataReader["MobileNumber"]) : null;
+                                getData.Salary = dataReader["Salary"] != DBNull.Value ? Convert.ToInt32(dataReader["Salary"]) : 0;
+                                getData.IsActive = dataReader["IsActive"] != DBNull.Value ? Convert.ToBoolean(dataReader["IsActive"]) : false;
+                                response.readInformation.Add(getData);
+
+                            }
+                        }
+                        else
+                        {
+                            response.Message = "No Record At DataBase";
+                            _logger.LogWarning("No Record At DataBase");
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                response.IsSuccess = false;
+                response.Message = ex.Message;
+                _logger.LogError($"ReadAllInformation Repository Layer Error : {ex.Message}");
+            }
+            finally
+            {
+                await _mySqlConnection.CloseAsync();
+                await _mySqlConnection.DisposeAsync();
+            }
+            return response;
+        }
+
+        public async Task<ReadInformationByIdResponse> ReadInformationById(ReadInformationByIdRequest request)
+        {
+            _logger.LogInformation("ReadInformationById Repository Layer Calling");
+            ReadInformationByIdResponse response = new ReadInformationByIdResponse();
+            response.IsSuccess = true;
+            response.Message = "Successful";
+            try
+            {
+                if (_mySqlConnection.State != System.Data.ConnectionState.Open)
+                { await _mySqlConnection.OpenAsync(); }
+
+                using (SqlCommand sqlCommand = new SqlCommand(SqlQueries.ReadInformationById, _mySqlConnection))
+                {
+                    sqlCommand.CommandType = System.Data.CommandType.Text;
+                    sqlCommand.CommandTimeout = 180;
+                    sqlCommand.Parameters.AddWithValue("@Id", request.Id);
+                    using (SqlDataReader dataReader = await sqlCommand.ExecuteReaderAsync())
+                    {
+                        if (dataReader.HasRows)
+                        {
+                            response.readInformation = new ReadInformation();
+                            await dataReader.ReadAsync();
+                            response.readInformation.UserId = dataReader["UserId"] != DBNull.Value ? Convert.ToInt32(dataReader["UserId"]) : 0;
+                            response.readInformation.UserName = dataReader["UserName"] != DBNull.Value ? Convert.ToString(dataReader["UserName"]) : null;
+                            response.readInformation.EmailId = dataReader["EmailId"] != DBNull.Value ? Convert.ToString(dataReader["EmailId"]) : null;
+                            response.readInformation.Gender = dataReader["Gender"] != DBNull.Value ? Convert.ToString(dataReader["Gender"]) : null;
+                            response.readInformation.Salary = dataReader["Salary"] != DBNull.Value ? Convert.ToInt32(dataReader["Salary"]) : 0;
+                            response.readInformation.MobileNumber = dataReader["MobileNumber"] != DBNull.Value ? Convert.ToString(dataReader["MobileNumber"]) : null;
+                            response.readInformation.IsActive = dataReader["IsActive"] != DBNull.Value ? Convert.ToBoolean(dataReader["IsActive"]) : false;
+                        }
+                        else
+                        {
+                            response.Message = "No Data Found At Database";
+                            _logger.LogWarning("No Data Found At Database");
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                response.IsSuccess = false;
+                response.Message = ex.Message;
+                _logger.LogError($"ReadInformationById Repository Layer Error : {ex.Message}");
+            }
+            finally
+            {
+                await _mySqlConnection.CloseAsync();
+                await _mySqlConnection.DisposeAsync();
+            }
+            return response;
+        }
+
+        public async Task<UpdateAllInformationByIdResponse> UpdateAllInformationById(UpdateAllInformationByIdRequest request)
+        {
+            _logger.LogInformation("UpdateAllInformationById Repository Layer Calling");
+            UpdateAllInformationByIdResponse response = new UpdateAllInformationByIdResponse();
+            response.IsSuccess = true;
+            response.Message = "Successful";
+            try
+            {
+                if (_mySqlConnection.State != System.Data.ConnectionState.Open)
+                { await _mySqlConnection.OpenAsync(); }
+
+                using (SqlCommand sqlCommand = new SqlCommand(SqlQueries.UpdateAllInformationById, _mySqlConnection))
+                {
+                    sqlCommand.CommandType = System.Data.CommandType.Text;
+                    sqlCommand.CommandTimeout = 180;
+                    sqlCommand.Parameters.AddWithValue("@UserId", request.UserId);
+                    sqlCommand.Parameters.AddWithValue("@UserName", request.UserName);
+                    sqlCommand.Parameters.AddWithValue("@EmailId", request.EmailId);
+                    sqlCommand.Parameters.AddWithValue("@MobileNumber", request.MobileNumber);
+                    sqlCommand.Parameters.AddWithValue("@Gender", request.Gender);
+                    sqlCommand.Parameters.AddWithValue("@Salary", request.Salary);
+                    int Status = await sqlCommand.ExecuteNonQueryAsync();
+                    if (Status <= 0)
+                    {
+                        response.IsSuccess = false;
+                        response.Message = "UnSuccessful Please check UserID";
+                        _logger.LogError("UnSuccessful Please check UserID");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                response.IsSuccess = false;
+                response.Message = ex.Message;
+                _logger.LogError($"UpdateAllInformationById Repository Layer Error : {ex.Message}");
+            }
+            finally
+            {
+                await _mySqlConnection.CloseAsync();
+                await _mySqlConnection.DisposeAsync();
+            }
+            return response;
+        }
+
+        public async Task<UpdateOneInformationByIdResponse> UpdateOneInformationById(UpdateOneInformationByIdRequest request)
+        {
+            _logger.LogInformation("UpdateOneInformationById Repository Layer Calling");
+            UpdateOneInformationByIdResponse response = new UpdateOneInformationByIdResponse();
+            response.IsSuccess = true;
+            response.Message = "Successful";
+            try
+            {
+                if (_mySqlConnection.State != System.Data.ConnectionState.Open)
+                { await _mySqlConnection.OpenAsync(); }
+
+                using (SqlCommand sqlCommand = new SqlCommand(SqlQueries.UpdateOneInformationById, _mySqlConnection))
+                {
+                    sqlCommand.CommandType = System.Data.CommandType.Text;
+                    sqlCommand.CommandTimeout = 180;
+                    sqlCommand.Parameters.AddWithValue("@UserId", request.UserId);
+                    sqlCommand.Parameters.AddWithValue("@Salary", request.Salary);
+                    int Status = await sqlCommand.ExecuteNonQueryAsync();
+                    if (Status <= 0)
+                    {
+                        response.IsSuccess = false;
+                        response.Message = "UnSuccessful Please check UserID";
+                        _logger.LogError("UnSuccessful Please check UserID");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                response.IsSuccess = false;
+                response.Message = ex.Message;
+                _logger.LogError($"UpdateOneInformationById Repository Layer Error : {ex.Message}");
+            }
+            finally
+            {
+                await _mySqlConnection.CloseAsync();
+                await _mySqlConnection.DisposeAsync();
+            }
+            return response;
+        }
+
+        //public string GenerateJWT(string UserId, string Email, string Role)
+        //{
+
+        //    var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]));
+        //    var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
+
+        //    //claim is used to add identity to JWT token
+        //    var claims = new[] {
+        //        new Claim(JwtRegisteredClaimNames.Sid, UserId),
+        //         new Claim(JwtRegisteredClaimNames.Email, Email),
+        //         new Claim("Roles", Role),
+        //         new Claim(ClaimTypes.Role,Role),
+        //         new Claim("Date", DateTime.Now.ToString()),
+        //         new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
+        //     };
+
+        //    var token = new JwtSecurityToken(_configuration["Jwt:Issuer"],
+        //      _configuration["Jwt:Audiance"],
+        //      claims,    //null original value
+        //      expires: DateTime.Now.AddMinutes(120),
+        //      signingCredentials: credentials);
+
+        //    string Data = new JwtSecurityTokenHandler().WriteToken(token); //return access token 
+        //    return Data;
+        //}
+
+
+    }
+}

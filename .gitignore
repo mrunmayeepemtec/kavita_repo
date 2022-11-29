@@ -1,0 +1,42 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.net Assignment 1/.vs
+/.net Assignment 1/bin/Debug/net6.0
+/.net Assignment 1/obj/Debug/net6.0
+/.net Assignment 1/obj
+/.vs/kavita_repo/v17
+/Assignment_2/obj
+/Assignment_2/bin/Debug/net7.0
+/.vs
+/Assignment 3(.netCore)/bin/Debug/netcoreapp3.1
+/Assignment 3(.netCore)/obj
+/Assignment_4(.netFramework)/bin/Debug
+/Assignment_4(.netFramework)/obj
+/Assignment_4(.netFramework)/Properties
+
+/Assignment_5(web .netFramework)/.vs
+/Assignment_5(web .netFramework)/CalcWebApplication1Framework/App_Start
+/Assignment_5(web .netFramework)/CalcWebApplication1Framework/bin
+/Assignment_5(web .netFramework)/CalcWebApplication1Framework/Content
+/Assignment_5(web .netFramework)/CalcWebApplication1Framework/fonts
+/Assignment_5(web .netFramework)/CalcWebApplication1Framework/obj/Debug
+/Assignment_5(web .netFramework)/CalcWebApplication1Framework/Properties
+/Assignment_5(web .netFramework)/packages
+/CalcConsoleApp1Core/bin/Debug/netcoreapp3.1
+/CalcConsoleApp1Core/obj/Debug/netcoreapp3.1
+/CalcConsoleApp1Framework/bin/Debug/net6.0
+/CalcConsoleApp1Framework/obj
+/CalcConsoleApp1Core/obj
+/Assignment_5(web .netFramework)/CalcWebApplication1Framework/obj/Release
+/WebAPIAssignments/CrudApiAdo.net/bin/Debug/netcoreapp3.1
+/WebAPIAssignments/CrudApiEntityFramework/bin/Debug/netcoreapp3.1
+/WebAPIAssignments/CrudApiEntityFramework/obj
+/WebAPIAssignments/CrudApiEntityFramework/Properties
+*.json
+/WebAPIAssignments/CRudApplication/bin/Debug/netcoreapp3.1
+/WebAPIAssignments/CRudApplication/obj
+/WebAPIAssignments/CrudWebApiEF/bin/Debug/net6.0
+/WebAPIAssignments/CrudWebApiEF/obj
+/WebAPIAssignments/CustomerManagementEFCore/obj

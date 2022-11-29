@@ -1,0 +1,45 @@
+C:\Users\kavita.dake\Desktop\WebApp\Minimal API\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\kavita.dake\Desktop\WebApp\Minimal API\bin\Debug\net6.0\appsettings.json
+C:\Users\kavita.dake\Desktop\WebApp\Minimal API\bin\Debug\net6.0\Minimal API.exe
+C:\Users\kavita.dake\Desktop\WebApp\Minimal API\bin\Debug\net6.0\Minimal API.deps.json
+C:\Users\kavita.dake\Desktop\WebApp\Minimal API\bin\Debug\net6.0\Minimal API.runtimeconfig.json
+C:\Users\kavita.dake\Desktop\WebApp\Minimal API\bin\Debug\net6.0\Minimal API.dll
+C:\Users\kavita.dake\Desktop\WebApp\Minimal API\bin\Debug\net6.0\Minimal API.pdb
+C:\Users\kavita.dake\Desktop\WebApp\Minimal API\obj\Debug\net6.0\Minimal API.csproj.AssemblyReference.cache
+C:\Users\kavita.dake\Desktop\WebApp\Minimal API\obj\Debug\net6.0\Minimal API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kavita.dake\Desktop\WebApp\Minimal API\obj\Debug\net6.0\Minimal API.AssemblyInfoInputs.cache
+C:\Users\kavita.dake\Desktop\WebApp\Minimal API\obj\Debug\net6.0\Minimal API.AssemblyInfo.cs
+C:\Users\kavita.dake\Desktop\WebApp\Minimal API\obj\Debug\net6.0\Minimal API.csproj.CoreCompileInputs.cache
+C:\Users\kavita.dake\Desktop\WebApp\Minimal API\obj\Debug\net6.0\Minimal API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\kavita.dake\Desktop\WebApp\Minimal API\obj\Debug\net6.0\staticwebassets\msbuild.Minimal API.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\kavita.dake\Desktop\WebApp\Minimal API\obj\Debug\net6.0\staticwebassets\msbuild.build.Minimal API.props
+C:\Users\kavita.dake\Desktop\WebApp\Minimal API\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Minimal API.props
+C:\Users\kavita.dake\Desktop\WebApp\Minimal API\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Minimal API.props
+C:\Users\kavita.dake\Desktop\WebApp\Minimal API\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\kavita.dake\Desktop\WebApp\Minimal API\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\kavita.dake\Desktop\WebApp\Minimal API\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\kavita.dake\Desktop\WebApp\Minimal API\obj\Debug\net6.0\scopedcss\bundle\Minimal API.styles.css
+C:\Users\kavita.dake\Desktop\WebApp\Minimal API\obj\Debug\net6.0\Minimal API.dll
+C:\Users\kavita.dake\Desktop\WebApp\Minimal API\obj\Debug\net6.0\refint\Minimal API.dll
+C:\Users\kavita.dake\Desktop\WebApp\Minimal API\obj\Debug\net6.0\Minimal API.pdb
+C:\Users\kavita.dake\Desktop\WebApp\Minimal API\obj\Debug\net6.0\Minimal API.genruntimeconfig.cache
+C:\Users\kavita.dake\Desktop\WebApp\Minimal API\obj\Debug\net6.0\ref\Minimal API.dll
+C:\Users\kavita.dake\Desktop\WebApp\Minimal API\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\kavita.dake\Desktop\WebApp\Minimal API\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\kavita.dake\Desktop\WebApp\Minimal API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\kavita.dake\Desktop\WebApp\Minimal API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\kavita.dake\Desktop\WebApp\Minimal API\obj\Debug\net6.0\Minimal API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\kavita.dake\Desktop\WebApp\Minimal API\obj\Debug\net6.0\Minimal API.csproj.CopyComplete
+C:\Users\kavita.dake\Desktop\WebApp\Minimal API\bin\Debug\net6.0\CalcCoreStandard.dll
+C:\Users\kavita.dake\Desktop\WebApp\Minimal API\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\kavita.dake\Desktop\WebApp\Minimal API\bin\Debug\net6.0\netDxf.netstandard.dll
+C:\Users\kavita.dake\Desktop\WebApp\Minimal API\bin\Debug\net6.0\SkiaSharp.dll
+C:\Users\kavita.dake\Desktop\WebApp\Minimal API\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\kavita.dake\Desktop\WebApp\Minimal API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\kavita.dake\Desktop\WebApp\Minimal API\bin\Debug\net6.0\runtimes\osx\native\libSkiaSharp.dylib
+C:\Users\kavita.dake\Desktop\WebApp\Minimal API\bin\Debug\net6.0\runtimes\tizen-armel\native\libSkiaSharp.so
+C:\Users\kavita.dake\Desktop\WebApp\Minimal API\bin\Debug\net6.0\runtimes\tizen-x86\native\libSkiaSharp.so
+C:\Users\kavita.dake\Desktop\WebApp\Minimal API\bin\Debug\net6.0\runtimes\win-x64\native\libSkiaSharp.dll
+C:\Users\kavita.dake\Desktop\WebApp\Minimal API\bin\Debug\net6.0\runtimes\win-x86\native\libSkiaSharp.dll
+C:\Users\kavita.dake\Desktop\WebApp\Minimal API\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.0\System.Drawing.Common.dll
+C:\Users\kavita.dake\Desktop\WebApp\Minimal API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.0\System.Drawing.Common.dll

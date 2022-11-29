@@ -1,0 +1,10 @@
+C:\Users\kavita.dake\Desktop\WebApp\Calc2\bin\Release\netcoreapp3.1\Calc2.deps.json
+C:\Users\kavita.dake\Desktop\WebApp\Calc2\bin\Release\netcoreapp3.1\Calc2.dll
+C:\Users\kavita.dake\Desktop\WebApp\Calc2\bin\Release\netcoreapp3.1\Calc2.pdb
+C:\Users\kavita.dake\Desktop\WebApp\Calc2\obj\Release\netcoreapp3.1\Calc2.csproj.AssemblyReference.cache
+C:\Users\kavita.dake\Desktop\WebApp\Calc2\obj\Release\netcoreapp3.1\Calc2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kavita.dake\Desktop\WebApp\Calc2\obj\Release\netcoreapp3.1\Calc2.AssemblyInfoInputs.cache
+C:\Users\kavita.dake\Desktop\WebApp\Calc2\obj\Release\netcoreapp3.1\Calc2.AssemblyInfo.cs
+C:\Users\kavita.dake\Desktop\WebApp\Calc2\obj\Release\netcoreapp3.1\Calc2.csproj.CoreCompileInputs.cache
+C:\Users\kavita.dake\Desktop\WebApp\Calc2\obj\Release\netcoreapp3.1\Calc2.dll
+C:\Users\kavita.dake\Desktop\WebApp\Calc2\obj\Release\netcoreapp3.1\Calc2.pdb

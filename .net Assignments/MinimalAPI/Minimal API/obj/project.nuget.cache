@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "dgSpecHash": "Dofzlzs/02CwtrRMKZxlo40A65W2Eb9lKR5zW8xHqBghKVoY2w3ZbZ9zjC1KBb5E3nLYLyOarZ9tz+F7eKfbeQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\kavita.dake\\Desktop\\WebApp\\Minimal API\\Minimal API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kavita.dake\\.nuget\\packages\\calccorestandard\\0.0.5\\calccorestandard.0.0.5.nupkg.sha512",
+    "C:\\Users\\kavita.dake\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\kavita.dake\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
+    "C:\\Users\\kavita.dake\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\kavita.dake\\.nuget\\packages\\microsoft.win32.systemevents\\4.5.0\\microsoft.win32.systemevents.4.5.0.nupkg.sha512",
+    "C:\\Users\\kavita.dake\\.nuget\\packages\\netdxf.netstandard\\2.3.0\\netdxf.netstandard.2.3.0.nupkg.sha512",
+    "C:\\Users\\kavita.dake\\.nuget\\packages\\skiasharp\\1.68.1.1\\skiasharp.1.68.1.1.nupkg.sha512",
+    "C:\\Users\\kavita.dake\\.nuget\\packages\\swashbuckle.aspnetcore\\6.0.0\\swashbuckle.aspnetcore.6.0.0.nupkg.sha512",
+    "C:\\Users\\kavita.dake\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.0.0\\swashbuckle.aspnetcore.swagger.6.0.0.nupkg.sha512",
+    "C:\\Users\\kavita.dake\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.0.0\\swashbuckle.aspnetcore.swaggergen.6.0.0.nupkg.sha512",
+    "C:\\Users\\kavita.dake\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.0.0\\swashbuckle.aspnetcore.swaggerui.6.0.0.nupkg.sha512",
+    "C:\\Users\\kavita.dake\\.nuget\\packages\\system.drawing.common\\4.5.0\\system.drawing.common.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

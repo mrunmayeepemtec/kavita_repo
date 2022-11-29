@@ -1,0 +1,12 @@
+C:\Users\kavita.dake\Desktop\WebApp\Calc3\bin\Release\net7.0\Calc3.deps.json
+C:\Users\kavita.dake\Desktop\WebApp\Calc3\bin\Release\net7.0\Calc3.dll
+C:\Users\kavita.dake\Desktop\WebApp\Calc3\bin\Release\net7.0\Calc3.pdb
+C:\Users\kavita.dake\Desktop\WebApp\Calc3\obj\Release\net7.0\Calc3.csproj.AssemblyReference.cache
+C:\Users\kavita.dake\Desktop\WebApp\Calc3\obj\Release\net7.0\Calc3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kavita.dake\Desktop\WebApp\Calc3\obj\Release\net7.0\Calc3.AssemblyInfoInputs.cache
+C:\Users\kavita.dake\Desktop\WebApp\Calc3\obj\Release\net7.0\Calc3.AssemblyInfo.cs
+C:\Users\kavita.dake\Desktop\WebApp\Calc3\obj\Release\net7.0\Calc3.csproj.CoreCompileInputs.cache
+C:\Users\kavita.dake\Desktop\WebApp\Calc3\obj\Release\net7.0\Calc3.dll
+C:\Users\kavita.dake\Desktop\WebApp\Calc3\obj\Release\net7.0\refint\Calc3.dll
+C:\Users\kavita.dake\Desktop\WebApp\Calc3\obj\Release\net7.0\Calc3.pdb
+C:\Users\kavita.dake\Desktop\WebApp\Calc3\obj\Release\net7.0\ref\Calc3.dll
