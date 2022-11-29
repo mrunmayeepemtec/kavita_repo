@@ -30,3 +30,13 @@
 /CalcConsoleApp1Framework/obj
 /CalcConsoleApp1Core/obj
 /Assignment_5(web .netFramework)/CalcWebApplication1Framework/obj/Release
+/WebAPIAssignments/CrudApiAdo.net/bin/Debug/netcoreapp3.1
+/WebAPIAssignments/CrudApiEntityFramework/bin/Debug/netcoreapp3.1
+/WebAPIAssignments/CrudApiEntityFramework/obj
+/WebAPIAssignments/CrudApiEntityFramework/Properties
+*.json
+/WebAPIAssignments/CRudApplication/bin/Debug/netcoreapp3.1
+/WebAPIAssignments/CRudApplication/obj
+/WebAPIAssignments/CrudWebApiEF/bin/Debug/net6.0
+/WebAPIAssignments/CrudWebApiEF/obj
+/WebAPIAssignments/CustomerManagementEFCore/obj

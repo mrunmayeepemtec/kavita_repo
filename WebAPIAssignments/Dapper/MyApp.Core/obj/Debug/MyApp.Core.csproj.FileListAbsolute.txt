@@ -1,0 +1,12 @@
+C:\Users\kavita.dake\Desktop\Ado.net Assignment\DapperWebApp\MyApp.Core\bin\Debug\MyApp.Core.dll.config
+C:\Users\kavita.dake\Desktop\Ado.net Assignment\DapperWebApp\MyApp.Core\bin\Debug\MyApp.Core.dll
+C:\Users\kavita.dake\Desktop\Ado.net Assignment\DapperWebApp\MyApp.Core\bin\Debug\MyApp.Core.pdb
+C:\Users\kavita.dake\Desktop\Ado.net Assignment\DapperWebApp\MyApp.Core\bin\Debug\EntityFramework.dll
+C:\Users\kavita.dake\Desktop\Ado.net Assignment\DapperWebApp\MyApp.Core\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\kavita.dake\Desktop\Ado.net Assignment\DapperWebApp\MyApp.Core\bin\Debug\EntityFramework.xml
+C:\Users\kavita.dake\Desktop\Ado.net Assignment\DapperWebApp\MyApp.Core\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\kavita.dake\Desktop\Ado.net Assignment\DapperWebApp\MyApp.Core\obj\Debug\MyApp.Core.csproj.AssemblyReference.cache
+C:\Users\kavita.dake\Desktop\Ado.net Assignment\DapperWebApp\MyApp.Core\obj\Debug\MyApp.Core.csproj.CoreCompileInputs.cache
+C:\Users\kavita.dake\Desktop\Ado.net Assignment\DapperWebApp\MyApp.Core\obj\Debug\MyApp.Core.csproj.CopyComplete
+C:\Users\kavita.dake\Desktop\Ado.net Assignment\DapperWebApp\MyApp.Core\obj\Debug\MyApp.Core.dll
+C:\Users\kavita.dake\Desktop\Ado.net Assignment\DapperWebApp\MyApp.Core\obj\Debug\MyApp.Core.pdb

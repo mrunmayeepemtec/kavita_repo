@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kavita.dake\\Desktop\\WebApp\\Calc2\\Calc2.csproj": {}
+    "C:\\Users\\kavita.dake\\Desktop\\.net\\kavita_repo\\.net Assignments\\WepAPP\\Calc2\\Calc2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kavita.dake\\Desktop\\WebApp\\Calc2\\Calc2.csproj": {
+    "C:\\Users\\kavita.dake\\Desktop\\.net\\kavita_repo\\.net Assignments\\WepAPP\\Calc2\\Calc2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kavita.dake\\Desktop\\WebApp\\Calc2\\Calc2.csproj",
+        "projectUniqueName": "C:\\Users\\kavita.dake\\Desktop\\.net\\kavita_repo\\.net Assignments\\WepAPP\\Calc2\\Calc2.csproj",
         "projectName": "Calc2",
-        "projectPath": "C:\\Users\\kavita.dake\\Desktop\\WebApp\\Calc2\\Calc2.csproj",
+        "projectPath": "C:\\Users\\kavita.dake\\Desktop\\.net\\kavita_repo\\.net Assignments\\WepAPP\\Calc2\\Calc2.csproj",
         "packagesPath": "C:\\Users\\kavita.dake\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kavita.dake\\Desktop\\WebApp\\Calc2\\obj\\",
+        "outputPath": "C:\\Users\\kavita.dake\\Desktop\\.net\\kavita_repo\\.net Assignments\\WepAPP\\Calc2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -25,8 +25,6 @@
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\kavita.dake\\Desktop\\WebApp\\Calc3\\bin\\Debug": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
